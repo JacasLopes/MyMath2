@@ -1,9 +1,10 @@
-from distutils.core import setup
-setup(name='MyMath2',
-      version='1.0',
-      description='MyMath Distribution Package',
-      author='Your Name',
-      author_email='Your Email',
-      url='The URL project - github for example',
-      packages=['MyMath2'],
-     )
+import os
+
+from setuptools import setup, find_packages
+setup(
+    name="MyMath2",
+    version="0.1",
+    description="MyMath2 Distribution Package",
+    packages=find_packages(),
+    include_package_data=True
+)
